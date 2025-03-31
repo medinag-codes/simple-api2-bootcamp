@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <title>Meal Plan API</title>
+</head>
+<body>
+    <header>
+        <h1>Mangia Mania</h1>
+        <h2>Create a Daily Meal Plan based on your Calorie Intake and Dietary Preference</h2>
+        <form>
+            <fieldset>
+                <legend>Calories</legend>
+                <label></label>
+                <input class="calories" type="number" id="calories" name="calories" min="700" max="">
+            </fieldset>
+
+            <fieldset>
+                <legend>Diet</legend>
+                <label></label>
+                <select class="diet" id="diet" name="diet">
+                    <option value="glutenFree">Gluten Free</option>
+                    <option value="ketogenic">Ketogenic</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="lactoVegetarian">Lacto-Vegetarian</option>
+                    <option value="ovoVegetarian">Ovo-Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="pescatarian">Pescatarian</option>
+                    <option value="primal">Primal</option>
+                    <option value="lowFoodmap">Low Food Map</option>
+                    <option value="whole30">Whole30</option>
+                </select>
+            </fieldset>
+
+            <label>Exlusions:</label>
+            <input class="exclusions" id="exlusions" type="text" name="exclusions" value="" placeholder="">
+
+            <button type="button" name="button">Get Meal Plan</button>
+        </form>
+    </header>
+
+        <!-- <fieldset>
+            <legend>Timeframe</legend>
+            <label></label>
+            <select class="timeframe" id="timeframe" name="timeframe">
+                <option value="day">Daily Meal Plan</option>
+                <option value="week">Weekly Meal Plan</option>
+        </fieldset> -->
+
+        
+
+    <section class="mealplan">
+        <div>
+            <section class="breakfast" id="breakfast">
+                <img id="breakfastImg" src="">
+                <p id="breakfastTitle"></p>
+            </section>
+            <section class="lunch" id="lunch">
+                <img id="lunchImg" src="">
+                <p id="lunchTitle"></p>
+            </section>
+            <section class="dinner" id="dinner">
+                <img id="dinnerImg" src=""></img>
+                <p id="dinnerTitle"></p>
+            </section>
+        </div>
+        <section id="nutrition">
+            <span id="calorias"></span>
+            <span id="protein"></span>
+            <span id="fat"></span>
+            <span id="carbohydrates"></span>
+        </section>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
